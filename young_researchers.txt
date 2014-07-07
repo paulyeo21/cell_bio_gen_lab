@@ -1,8 +1,0 @@
-Introduction module and video said similar things.
-Fix the links on the "getting started" page.
-Order the swirl tests in a chronological order.
-Make the dim portion in r basics swirl test clearer. dim().
-ncol and nrow is in swirl tests do we want that?
-module1: variable definition,(case or dataset)? I think doesnt matter since we are trying to tie case and variables together, but whatever.
-figure out how to output the commands the students use in swirl to grade
-linear regresion color=green answer test is wrong
