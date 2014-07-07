@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cell Bio Gen Lab</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="styles/main.css">
+        <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">    
+                <ul class="nav nav-pills pull-right">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="weekbyweek.html"> Course Schedule <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="weekbyweek.html"> Course Schedule</a></li>
+                        <li class="divider"></li>
+                        <li><a href="week1.html">Week 1: Graphing Data and Statistical Analysis</a></li>
+                        <li><a href="week2.html">Week 2: Solutions and DNA Gel Electrophoresis</a></li>
+                        <li><a href="#">Week 3: Fluorescence/ Spectroscopy</a></li>
+                        <li><a href="#">Week 4: Microscopy</a></li>
+                        <li><a href="#">Week 5: Bioinformatics</a></li>
+                        <li><a href="#">Week 6: Introduction to &#946;-Galactosidase System in <em>Escherichia coli</em></a></li>
+                        <li><a href="#">Week 7: Laboratory Exam</a></li>
+                        <li><a href="#">Week 8: Induction to &#946;-Galactosidase System in <em>Escherichia coli</em></a></li>
+                        <li><a href="#">Week 9: &#946;-Galactosidase System in <em>Escherichia coli</em>: Oral Presentations</a></li>
+                        <li><a href="#">Week 10: Roundup Ready-Looking for a Gene: Background and Bioinformatics</a></li>
+                        <li><a href="#">Week 11: Roundup Ready Lab: DNA extraction and PCR</a></li>
+                        <li><a href="#">Week 12: Roundup Ready Lab: Run and analyze DNA gel</a></li>
+                        <li><a href="#">Week 13: Senior Student Presentations</a></li>
+                    </ul>
+                  </li>                  
+                  <li class="active">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Resources <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="lab_docs.html">Lab Documents</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="modules.html">Modules</a></li>
+                        <li><a href="swirl.html">Swirl Tests</a></li>
+                        <li><a href="cheatsheet.html">R Cheat Sheet</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <h3>Cell Biology & Genetics Lab</h3>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <ul class="nav nav-list">
+                            <li class="active"><a href="#video1">Introduction to RStudio</a></li>
+                            <li><a href="#video2">Introduction to Functions</a></li>
+                            <li><a href="#video3">Formatting Data</a></li>
+                            <li><a href="#video4">Importing Data</a></li>
+                            <li><a href="#video5">Functions on Datasets</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-8">
+                        <div class="tab-content">
+                            <div class="tab active" id="video1">
+                                <embed width="100%" height="500" src="https://www.youtube.com/v/watch?v=XE3C3uwSZRU" type="application/x-shockwave-flash" allowFullScreen='true'></embed>   
+                            </div>
+                            <div class="tab" id="video2">
+                                <embed width="500" height="300" src="https://www.youtube.com/v/watch?v=FySriOtaDkA" type="application/x-shockwave-flash" allowFullScreen='true'></embed>
+                            </div>
+                            <div class="tab" id="video3">
+                                <embed width="500" height="300" src="" type="application/x-shockwave-flash" allowFullScreen='true'></embed>
+                            </div>
+                            <div class="tab" id="video4">
+                                <embed width="500" height="300" src="" type="application/x-shockwave-flash" allowFullScreen='true'></embed>
+                            </div>
+                            <div class="tab" id="video5">
+                                <embed width="500" height="300" src="" type="application/x-shockwave-flash" allowFullScreen='true'></embed>
+                            </div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="/bower_components/bootstrap/js/affix.js"></script>
+        <script src="/bower_components/bootstrap/js/alert.js"></script>
+        <script src="/bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="/bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="/bower_components/bootstrap/js/modal.js"></script>
+        <script src="/bower_components/bootstrap/js/transition.js"></script>
+        <script src="/bower_components/bootstrap/js/button.js"></script>
+        <script src="/bower_components/bootstrap/js/popover.js"></script>
+        <script src="/bower_components/bootstrap/js/carousel.js"></script>
+        <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="/bower_components/bootstrap/js/collapse.js"></script>
+        <script src="/bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

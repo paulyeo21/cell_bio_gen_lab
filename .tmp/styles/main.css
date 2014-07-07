@@ -1,0 +1,61 @@
+.header {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header h3 {
+    padding-top: 10px; 
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1030px;
+  }
+}
+
+#content {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 27px;
+    white-space: -moz-pre-wrap; /* Firefox */    
+}
+
+.marketing {
+    padding-bottom: 70px;
+}
+
+.marketing h4 {
+    padding-top: 15px;
+}
+
+.nav-list {
+    padding-right: 25px;
+}
+
+.tab.active {
+    display:block;
+}
+
+.tab {
+    display:none;
+}
+
+#content #instructions {
+    padding-top: 30px;
+}
+
+iframe {
+    padding-bottom: 10px;
+}
+
+embed {
+    padding-bottom: 10px;
+}
