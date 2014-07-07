@@ -1,0 +1,125 @@
+<!DOCTYPE html><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta http-equiv=x-ua-compatible content="IE=9"><title>Graphing and Statistical Data Analysis</title><style type=text/css>body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}</style><body><h1>Graphing and Statistical Data Analysis</h1><p><strong>Safety Tip of the Day: Keep your computer away from chemicals in the lab!</strong></p><h3>Learning Objectives <strong><em>May need adjusting for new materials</em></strong></h3><p>Students will be able to:</p><ol><li><p>Handle data sets and graph (using R)</p><ul><li>Design an effective spreadsheet</li><li>Calculate descriptive statistics (mean, standard deviation)</li><li>Create publication quality graphs including figure title</li></ul></li><li><p>Work with statistical differences/relationships between groups (using R)</p><ul><li>Know how and when to use<br><ul><li>ANOVA</li><li>Regression analysis<br></li></ul></li><li>Understand p-values and levels of statistical significance</li></ul></li></ol><h3>Preparation for Lab <strong><em>Needs adjusting for new materials</em></strong></h3><p>BEFORE CLASS, please read the following:</p><ol><li>This handout</li><li>Handouts in your Lab Manual Supplement (LMS) on:<ul><li>Graphing with R (what section?). Read up to “Data Analysis”.</li><li>Statistics (K-1).</li><li>ANOVA and regression <strong><em>Needs work. The assignment does not use regression</em></strong></li><li>Scientific Investigation (M-1). Skim this to start to comprehend experimental design. You will refer to this handout multiple times in the future!</li></ul></li></ol><h2>Introduction</h2><p>Scientific experimentation requires that you not only ask good and testable questions, but that you have the ability to determine whether your findings are statistically significant. This requires that you have appropriate controls and that you (and others) are able to replicate your findings.</p><p>Depending on your questions and the techniques that are utilized, it may be enough to present qualitative data. However, if you have measureable data, you should utilize appropriate statistical tests that allow you to report with a high level of confidence that your experimental and control groups differ from each other. <strong><em>The assignment does not seem to ask for a test, or if it does, it does not do so explicitly. Since tests are referred to in this introduction, should the assignment be modified to ask for a test?</em></strong></p><p>Once you have obtained data from an experiment and completed its analysis, you need to be able to present your findings in a clear and organized manner. Generally, this means that you will present a summary of your data, often in the form of a graph. Raw data is rarely presented in a paper, but contemporary practice asks that it be made available to readers who request it.</p><ol><li><p>Summary data can be represented in a number of ways, but is often reported as</p><pre><code>    mean ± the standard deviation 
+</code></pre><p>of each of the experimental and control groups.</p></li><li><p>Graphs should be as simple and clear as possible, including a detailed figure legend (caption) that enables the reader to easily understand both the finding and how the data was obtained and analyzed.</p></li></ol><p>The purpose of this lab is to provide you with a bit of background in statistical analysis and some hands-on experience organizing, summarizing, analyzing and graphing a data set. The knowledge and skills obtained in this lab are ones you will utilize in most of your upper level biology courses and will also help you become more proficient at interpreting and understanding scientific findings.</p><h2>Assignment</h2><p>The complete and polished assignment is due at the beginning of lab the following week.</p><p>For this assignment, you should hand in work you have completed on your own. You can, however, ask others (classmates, instructors of this course and teaching assistants) for assistance with Google spreadsheets and R and/or consult others regarding graph choices. In general, working together is fine and beneficial. However, you should keep in mind that on the exam for the class you must do all of this work on your own.</p><p><strong>Before you leave lab today, be sure you read the assignment and ask questions. There may be information you need to complete the assignment.</strong></p><p>The assignment concerns data based on real studies. However, the details and numbers in the data have been altered.</p><h3>The Study</h3><p>Some recent studies suggest that the lysophosphatidic acid (LPA) receptors, LPA1, LPA2, or LPA3, are over expressed in a number of different types of cancers. The following study was designed to elucidate whether LPA promotes cancer cell proliferation in colon and breast cancer cells.</p><p><strong>Method: Cell Culture &amp; Cell Proliferation Assay:</strong></p><ol><li>Breast and colon cancer cell lines were cultured separately in a 96-well plate at a known and constant density.</li><li>Cells were then incubated in the presence of either vehicle or varying concentrations of LPA. (Note: What is meant by a vehicle in molecular biology?)</li><li>Reagents were replenished daily.<br></li><li>After three days, CellTiter 96 AQueous (MTS) One Solution reagent (Promega) was added to each well, and absorbance was recorded at 490 nm by using a SpectraMax Plus plate reader (softmaxpro 401, Molecular Devices).<br></li><li>Cell numbers were then calculated by using a standard curve correlating the absorbance to the cell number counted under a microscope.</li><li>Multiple trials (A-H) were done with each cell line.</li></ol><p><strong>Raw Data</strong></p><p>The data consists of cell numbers, which are reported in the following 96-well plate template and are the numbers you should work with.</p><p><br><table width=550><tr><td><td colspan=6>Colon Cancer Cell Line<td colspan=6>Breast Cancer Cell Line<tr><td><td>Vehicle<td>0.05 µM LPA<td>0.1 µM LPA<td>0.5 µM LPA<td>1 µM LPA<td>2 µM LPA<td>Vehicle<td>0.05 µM LPA<td>0.1 µM LPA<td>0.5 µM LPA<td>1 µM LPA<td>2 µM LPA<tr><td>A<td>12156<td>11333<td>15444<td>28333<td>33576<td>45673<td>11345<td>23467<td>23467<td>41805<td>52877<td>75786<tr><td>B<td>12359<td>12875<td>16765<td>35666<td>45488<td>46455<td>10846<td>20566<td>30753<td>42854<td>51965<td>68745<tr><td>C<td>8766<td>10276<td>19333<td>33389<td>46888<td>45007<td>9846<td>15487<td>25344<td>38688<td>50847<td>68456<tr><td>D<td>9888<td>12455<td>17666<td>33467<td>46876<td>52965<td>12566<td>18577<td>30233<td>41844<td>49651<td>72199<tr><td>E<td>11235<td>9735<td>15666<td>32387<td>38768<td>45865<td>9855<td>19687<td>29641<td>47386<td>60167<td>70466<tr><td>F<td>10259<td>11708<td>15267<td>23458<td>46754<td>48823<td>10423<td>18655<td>26358<td>33587<td>55467<td>64856<tr><td>G<td>9853<td>8766<td>20346<td>32693<td>39688<td>45450<td>9766<td>17539<td>22356<td>45222<td>57299<td>72955<tr><td>H<td>10435<td>10488<td>15244<td>33788<td>42788<td>46872<td>11355<td>14387<td>22455<td>38699<td>60387<td>68344</table></p><h3>To write up and hand in</h3><p>Using the raw data and the information below, your assignment is to create and hand in a printed copy of the following:</p><ol><li><p>An organized and spreadsheet of the data together with a written description of how the spreadsheet is organized.</p></li><li><p>The mean and standard deviation of each experimental group, using R for the calculations. <strong><em>LACK OF CLARITY ALERT: What the experimental groups for this assignment? Are there 2 (colon and breast) or are there 12 (one for each column)?</em></strong></p></li><li><p>A clearly labeled and clearly presented graph(s) of this study.</p><ul><li>Graphs should be suitable for publication in a scientific journal. Therefore they must include all information necessary for understanding the context of the plot: informative title, axes labels, figure legend (caption).</li></ul></li><li><p>In a separate paragraph, clearly explain your rationale for the choice of the type(s) of graphs you made (scatterplot, boxplot, bar graph, line graph, etc).</p></li><li><p>Based on your analysis, answer the following questions:</p><ul><li>State a possible hypothesis that was tested in this experiment, using proper &ldquo;if .. then” form.</li><li>Does LPA cause a significant increase in cell proliferation of either of these colon and breast cancer cell lines? Explain.</li><li>If you find that there is a significant effect of LPA on cancer cell proliferation, what is the lowest concentration at which LPA has a significant effect for each cancer cell line? Explain.</li><li>Is one of these cancer cell lines more sensitive to the effects of LPA than the other? Explain your reasoning.</li><li>For each cancer cell line, has the maximum effect of LPA on proliferation been reached? Explain.</li></ul></li></ol>

@@ -59,11 +59,11 @@
 			<h3> Cheatsheet </h3>
 			<p><u>Reading Data into Rstudio:</u></p>
 			<ul>
-				<li><code>data_name <- read.csv(“filename_of_dataset.csv”)</code></li>
+				<li><code>data_name &gt;- read.csv(“filename_of_dataset.csv”)</code></li>
 			</ul>
 			<p><u>Storing variables in R:</u></p>
 			<ul>
-				<li><code>x <- 1</code> (read as x gets 1, and is used to assign values to variables and refer to them by that name)</li>
+				<li><code>x &gt;- 1</code> (read as x gets 1, and is used to assign values to variables and refer to them by that name)</li>
 			</ul>
 			<p><u>1. Introduction to R, Rstudio and Data-Sets:</u></p>
 			<ul>
@@ -112,7 +112,7 @@
 				<code> x="x-axis_label", y="y-axis_label")</code></li>
 				<li><code>name_of_subset = subset(name_of_dataset, conditional_statement)</code></li>
 				<li>For example-> <code>Galton_tall = subset(Galton, height > 75)</code> makes a subset of the Galton data-set called Galton_tall, which includes only those individuals who are taller than 75 inches. -> For categorical variables, example -> Galton_female = subset(Galton, sex==”F”), makes a subset of the Galton dataset, that includes only females</li>
-				<li>Subsets can be include more than one condition and we use the “&” symbol to join the multiple conditions. For example: <code>Galton_tallfemales = subset(Galton, height>65 & sex==”F”)</code>, makes a subset of the Galton dataset, that includes only those females that are taller than 65 inches</li>
+				<li>Subsets can be include more than one condition and we use the “&#38;” symbol to join the multiple conditions. For example: <code>Galton_tallfemales = subset(Galton, height>65 &#38; sex==”F”)</code>, makes a subset of the Galton dataset, that includes only those females that are taller than 65 inches</li>
 				<li><code>mytest = t.test(subset1$variable_of_choice, subset2$variable_of_choice)</code> : Performs a t-test to compare the two groups (in this case, the two subsets) to check for significant difference between them. T-tests are used for comparison between two groups</li>
 				<li><code>mytest$p.value</code>: Returns the p-value of the above t-test</li>
 				<li><code>anova(name_of_linear_model)</code>: Performs an ANOVA test to check for statistically significant difference between three or more groups</li>
