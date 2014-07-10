@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Importing Data to RStudio</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+<h1>Importing Data to RStudio</h1>
+
+<p>Before you export your data from Google to RStudio, make sure your spreadsheet follows these four guidelines:</p>
+
+<ol>
+<li>Variable names cannot contain spaces, so it is optimal if they are one-word names only. If you want a variable name to be longer than one word, use periods or underscores to act as spaces. </li>
+<li>R is <em>case-sensitive</em>, so it is easier if everything is lower case.</li>
+<li>The file that you want to upload should only contain the data in canonical form. </li>
+<li>If you have other information that you want to keep, save it in a different document, which is called the <strong>codebook</strong>.</li>
+</ol>
+
+<p>If you have formatted your data correctly, then it can be read as .csv form, which is how R reads your data.  Download your properly-formatted spreadsheet as a .csv file by selecting File &gt; Download as &gt; Comma-separated values (.csv). The file will download to your local hard-drive.</p>
+
+<p>Next, open your RStudio browser. In the Files/Plots/Packages/Help pane, upload your data by selecting Files &gt; Upload &gt; Choose File &gt; your_spreadsheet_name.csv. Then, select Open, which uploads your data to RStudio. You will find the name of your data in your list of Files.</p>
+
+<p>To access this data, you will first have to give it a one-word name (let&#39;s call this example_data).  In the R console, type: example_data = read.csv(&ldquo;The name of your data frame.csv&rdquo;). read.csv() is a function that takes a file name as an argument and reads it into the RStudio console under the given name on the left-hand side of the equals sign. The data is now stored in the console as \( \text{example_data} \).</p>
+
+<p>To confirm you loaded the data correctly, try the follow command: \( \text{View(example_data)} \) If the data were loaded correctly, the data frame will open in the source pane.</p>
+
+</body>
+
+</html>
+

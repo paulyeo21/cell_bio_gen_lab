@@ -5,23 +5,24 @@
         <title>Cell Bio Gen Lab</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="/favicon.ico">
         <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="/styles/main.css">
         <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script>
-        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="/scripts/main.js"></script>
     </head>
     <body>
         <!-- Header -->
         <div class="container">
-            <div class="header">  
+            <div class="header">            
                 <ul class="nav nav-pills pull-right">
-                  <li><a href="index.html">Home</a></li>
-                  <li>
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="weekbyweek.html"> Course Schedule <span class="caret"></span>
-                    </a>
+                  <li><a href="/index.html">Home</a></li>
+                  <li class="active"><a class="dropdown-toggle" data-toggle="dropdown" href="/weekbyweek.html">Course Schedule <span class="caret"></a>
+                  <!-- <li class="dropdown dropdown-split-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="caret" style="z-index:-1;"></i>
+                    </a> -->
                     <ul class="dropdown-menu">
-                        <li><a href="weekbyweek.html"> Course Schedule</a></li>
+                        <li><a href="/weekbyweek.html"> Course Schedule</a></li>
                         <li class="divider"></li>
                         <li><a href="week1.html">Week 1: Graphing Data and Statistical Analysis</a></li>
                         <li><a href="week2.html">Week 2: Solutions and DNA Gel Electrophoresis</a></li>
@@ -38,7 +39,7 @@
                         <li><a href="week13.html">Week 13: Senior Student Presentations</a></li>
                     </ul>
                   </li>                  
-                  <li class="active">
+                  <li>
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         Resources <span class="caret"></span>
                     </a>
@@ -56,47 +57,10 @@
         </div>
 
         <div class="container" id="content">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-6 col-md-3">
-                        <ul class="nav nav-list">
-                            <li class="active"><a href="#week1">Graphing Data and Statistical Analysis</a></li>
-                            <li><a href="#week2">Solutions and DNA Gel Electrophoresis</a></li>
-                            <li><a href="#week3">Fluorescence/ Spectroscopy</a></li>
-                            <li><a href="#week4">Microscopy</a></li>
-                            <li><a href="#week5">Bioinformatics</a></li>
-                            <li><a href="#week6">Introduction to &#946;-Galactosidase System in <em>Escherichia coli</em></a></li>
-                            <li><a href="#week7">Induction to &#946;-Galactosidase System in <em>Escherichia coli</em></a></li>
-                            <li><a href="#week8">&#946;-Galactosidase System in <em>Escherichia coli</em>: Oral Presentations</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-8">
-                        <div class="tab-content">
-                            <div class="tab active" id="week1">
-                                <iframe src="labdocs/week1.html" width="800" height="450" seamless="yes" frameborder="0"></iframe>
-                            </div>
-                            <div class="tab" id="week2">
-                                <iframe src="labdocs/week2.html" width="800" height="450" seamless="yes" frameborder="0"></iframe>
-                            </div>
-                            <div class="tab" id="week3">
-                                <iframe src="labdocs/week3.html" width="800" height="450" seamless="yes" frameborder="0"></iframe>
-                            </div>
-                            <div class="tab" id="week4">
-                            </div>
-                            <div class="tab" id="week5">
-                            </div>
-                            <div class="tab" id="week6">
-                                <iframe src="labdocs/week6.html" width="800" height="450" seamless="yes" frameborder="0"></iframe>
-                            </div>
-                            <div class="tab" id="week7">
-                            </div>                            
-                            <div class="tab" id="week8">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <iframe src="labdocs/Wk3-Fluorescencelab.html" width="800" height="450" seamless="yes" frameborder="0"></iframe>
+<!--             <h4><img src="images/swirl_stats.png" height="30" width="80"/> Complete the <a href="swirl.html"><code>Log Scale</code></a> Swirl Test</h4>
+ -->        </div>
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -137,5 +101,5 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
         <!-- endbuild -->
-    </body>   
-</html> 
+    </body>
+</html>
