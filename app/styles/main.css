@@ -20,12 +20,8 @@
   }
 }
 
-#content {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 30px;
-    padding-right: 27px;
-    white-space: -moz-pre-wrap; /* Firefox */  
+.content {
+    padding: 2% 2% 2% 2%;
 }
 
 .marketing {
@@ -67,6 +63,7 @@ embed {
     /*min-height: 100% !important;*/
     background-color: #D7DACF;
     z-index: -1;
+    /*border: 3px solid #000000;  */
 }
 
 .col-8-10 {
@@ -78,7 +75,6 @@ embed {
 .col-fourth {
     width: 25%;
     height: 33%%;
-    /*border: 3px solid #000000;*/
     text-align: center;
     padding: 2% 2% 2% 2%;
     position: relative;
@@ -88,6 +84,7 @@ embed {
 
 html {
     height: 100%;
+    /*border: 3px solid #000000;*/
 }
 
 body {
@@ -99,3 +96,18 @@ body {
     float: left;
     position: relative;
 }
+
+.nav.nav-pills.pull-right {
+    position: relative;
+    right: 2%;
+}
+
+.col-3-10 {
+    width: 30%;
+}
+
+.col-7-10 {
+    width: 70%;
+}
+
+
