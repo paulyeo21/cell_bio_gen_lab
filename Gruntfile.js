@@ -21,11 +21,28 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    grunt.loadNpmTasks('grunt-bake');
+
     // Define the configuration for all the tasks
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
 
         // Project settings
         config: config,
+
+        // Bake
+        bake: {
+            build: {
+                options: {
+                    // Task-specific options go here.
+                },
+                files: {
+                    // files go here, like so:
+                    'dist/index.html':'app/index.html',
+                    'dist/cheatsheet.html':'app/cheatsheet.html'
+                }
+            },
+        },
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
@@ -39,6 +56,10 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true
                 }
+            },
+            bake: {
+                files: [ '<%= config.app %>/includes/**' ],
+                tasks: 'bake:build'
             },
             jstest: {
                 files: ['test/spec/{,*/}*.js'],
@@ -356,6 +377,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'bake:build',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
@@ -373,4 +395,18 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    grunt.registerTask('server', function (target) {
+        if (target === 'dist') {
+            return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
+        }
+        grunt.task.run([
+            'clean:server',
+            'bake:build',
+            'concurrent:server',
+            'connect:livereload',
+            'open',
+            'watch'
+        ]);
+    });
 };
