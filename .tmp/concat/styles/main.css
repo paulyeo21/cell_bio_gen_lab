@@ -10,10 +10,12 @@
 }
 
 .jumbotron {
+    /*position: absolute;*/
     text-align: center;
     background-image: url('http://publicradio1.wpengine.netdna-cdn.com/oncampus/files/2013/12/Macalester-Snow-December-2013-Photo-by-Pratik-Singh.jpeg');
     background-size: 100% 100%;
-    height: 300px;
+    height: 50%;
+    z-index: 1000;
 }
 
 /* Customize container */
@@ -28,7 +30,7 @@
     padding-bottom: 25px;
     padding-left: 30px;
     padding-right: 27px;
-    white-space: -moz-pre-wrap; /* Firefox */    
+    white-space: -moz-pre-wrap; /* Firefox */  
 }
 
 .marketing {
@@ -63,6 +65,36 @@ embed {
     padding-bottom: 10px;
 }
 
+.col-1-10 {
+    width: 7%;
+    height: 88%;
+    background-color: #D7DACF;
+}
+
+.col-fourth {
+    width: 21.5%;
+    height: 33%%;
+    /*border: 3px solid #000000;*/
+    text-align: center;
+    padding: 2% 2% 2% 2%;
+    margin-top: 27.65%;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    /*border: 3px solid #000000;  */
+    height: 100%;
+}
+
+[class*='col-'] {
+    float: left;
+    position: relative;
+    z-index: -1;
+}
 /*!
  * Bootstrap v3.0.3 (http://getbootstrap.com)
  * Copyright 2013 Twitter, Inc.
