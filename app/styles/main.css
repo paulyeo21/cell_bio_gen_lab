@@ -11,6 +11,9 @@
 
 .jumbotron {
     text-align: center;
+    background-image: url('http://publicradio1.wpengine.netdna-cdn.com/oncampus/files/2013/12/Macalester-Snow-December-2013-Photo-by-Pratik-Singh.jpeg');
+    background-size: 100% 100%;
+    height: 300px;
 }
 
 /* Customize container */
